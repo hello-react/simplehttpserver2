@@ -11,6 +11,7 @@ Install using `npm`
      npm install simplehttpserver2 -g
      
 or using `yarn`
+
      yarn global add simplehttpserver2
 
 # Usage
@@ -24,6 +25,10 @@ Server listens the port 8000. Open browser to http://localhost:8000 to view.
 
 **Security Consideration**. simplehttpserver2 does not care if symbolic links point outside the web root directory.
 
+# Custom port
+
+    simplehttpserver2 [directory] -p 8080
+    
 # Reverse proxy
 
     simplehttpserver2 -r /api=http://localhost:3001
